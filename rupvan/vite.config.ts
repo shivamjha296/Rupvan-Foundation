@@ -10,5 +10,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',  // Output directory for Netlify
     emptyOutDir: true,  // Clears the old build before a new one
+    rollupOptions: {
+      input: {
+        main: './index.html',  // Explicitly specify the entry point
+      },
+    },
   }
 });
