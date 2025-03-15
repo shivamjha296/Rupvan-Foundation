@@ -1,0 +1,4 @@
+[build]
+  base = "rupvan"
+  command = "npm run build"
+  publish = "dist" 
