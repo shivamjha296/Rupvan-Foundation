@@ -48,7 +48,7 @@ const About = () => {
             <div className="mt-10 lg:mt-0">
               <img
                 className="rounded-xl shadow-md object-cover h-80 w-full"
-                src="https://images.unsplash.com/photo-1573496799515-eebbd19d5c10?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                src="https://bucknercalderwoods.org/wp-content/uploads/2024/04/Senior-Living-Activities-in-a-Senior-Community.jpeg"
                 alt="Senior residents enjoying activities"
               />
             </div>
@@ -59,7 +59,7 @@ const About = () => {
             <div className="order-2 lg:order-1 mt-10 lg:mt-0">
               <img
                 className="rounded-xl shadow-md object-cover h-80 w-full"
-                src="https://images.unsplash.com/photo-1573497019236-61f988f2454f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                src="https://www.storypoint.com/wp-content/uploads/2024/03/resident-activity-painting-outdoors-.jpg"
                 alt="Elderly couple enjoying sunset"
               />
             </div>
@@ -167,7 +167,7 @@ const About = () => {
             <div className="text-center">
               <img
                 className="mx-auto h-40 w-40 rounded-full object-cover border-4 border-rose-100"
-                src="https://images.unsplash.com/photo-1573497019236-7fa8ff43d4cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
                 alt="Activities Director"
               />
               <h3 className="mt-4 text-xl font-bold text-gray-900">Emily Rodriguez</h3>

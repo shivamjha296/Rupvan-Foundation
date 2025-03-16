@@ -83,7 +83,7 @@ const Volunteer = () => {
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
-            src="/api/placeholder/1950/700"
+            src="https://www.homecareassistancetampabay.com/wp-content/uploads/Aging-Adults-Volunteering.jpg"
             alt="Volunteers helping seniors"
           />
           <div className="absolute inset-0 bg-gray-900 opacity-70"></div>
