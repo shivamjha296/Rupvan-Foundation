@@ -130,8 +130,8 @@ const Contact = () => {
               <div className="mt-8">
                 <h3 className="text-lg font-medium text-gray-900 mb-4">Our Location</h3>
                 <div className="aspect-w-16 aspect-h-9">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzEwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7544.542473623146!2d73.118184!3d19.007766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e928d7bffb55%3A0x31594a260ed0060f!2sRUPVAN%20FOUNDATION%20(%20RUPVAN%20GOLDEN%20AGE%20HOMES%20AND%20NURSING)!5e0!3m2!1sen!2sin!4v1742114156989!5m2!1sen!2sin&output=embed"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
