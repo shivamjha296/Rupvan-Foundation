@@ -10,7 +10,8 @@ const Volunteer = () => {
     time: '',
     experience: '',
     interests: '',
-    message: ''
+    message: '',
+    aadhar: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -64,7 +65,8 @@ const Volunteer = () => {
           time: '',
           experience: '',
           interests: '',
-          message: ''
+          message: '',
+          aadhar: ''
         });
       } else {
         throw new Error(result.message || 'Form submission failed');
@@ -79,61 +81,66 @@ const Volunteer = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative py-16">
+      <div className="relative py-24">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
             src="https://www.homecareassistancetampabay.com/wp-content/uploads/Aging-Adults-Volunteering.jpg"
             alt="Volunteers helping seniors"
           />
-          <div className="absolute inset-0 bg-gray-900 opacity-70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900/60"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-5xl font-bold text-white mb-6">
             Become a Volunteer
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-2xl text-white max-w-3xl mx-auto leading-relaxed">
             Make a difference in the lives of our seniors by volunteering your time and skills
           </p>
         </div>
       </div>
 
       {/* Volunteer Form Section */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white rounded-lg shadow-lg p-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
           {isSubmitted ? (
-            <div className="text-center py-8">
-              <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h2>
-              <p className="text-lg text-gray-600 mb-6">
+            <div className="text-center py-12">
+              <div className="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="h-12 w-12 text-green-500" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h2>
+              <p className="text-xl text-gray-600 mb-8">
                 Your volunteer application has been submitted successfully. We'll contact you soon!
               </p>
               <button
                 onClick={() => setIsSubmitted(false)}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-rose-600 hover:bg-rose-700"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-lg text-white bg-rose-600 hover:bg-rose-700 transition-colors duration-200"
               >
                 Submit Another Application
               </button>
             </div>
           ) : (
             <>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Volunteer Application Form</h2>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Volunteer Application Form</h2>
+                <p className="text-lg text-gray-600">Join our team of dedicated volunteers and make a positive impact</p>
+              </div>
               
               {error && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-md">
-                  <p className="text-red-600">{error}</p>
+                <div className="mb-8 p-4 bg-red-50 border-l-4 border-red-500 rounded-md">
+                  <p className="text-red-700">{error}</p>
                 </div>
               )}
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-8">
                 {/* FormSubmit configuration */}
                 <input type="hidden" name="_subject" value="New Volunteer Application" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
                       Full Name
                     </label>
                     <input
@@ -143,12 +150,13 @@ const Volunteer = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
+                      placeholder="Enter your full name"
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700">
                       Email
                     </label>
                     <input
@@ -158,12 +166,13 @@ const Volunteer = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
+                      placeholder="Enter your email"
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                  <div className="space-y-2">
+                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-700">
                       Phone Number
                     </label>
                     <input
@@ -173,12 +182,39 @@ const Volunteer = () => {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
+                      placeholder="Enter your phone number"
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="date" className="block text-sm font-medium text-gray-700">
+                  <div className="space-y-2">
+                    <label htmlFor="aadhar" className="block text-sm font-semibold text-gray-700">
+                      Aadhar Number
+                    </label>
+                    <input
+                      type="text"
+                      id="aadhar"
+                      name="aadhar"
+                      required
+                      maxLength={14}
+                      pattern="[0-9]{4} [0-9]{4} [0-9]{4}"
+                      title="Please enter a valid 12-digit Aadhar number"
+                      value={formData.aadhar}
+                      onChange={(e) => {
+                        const numbers = e.target.value.replace(/[^0-9]/g, '').slice(0, 12);
+                        const formattedValue = numbers.replace(/(\d{4})(?=\d)/g, '$1 ');
+                        setFormData(prevState => ({
+                          ...prevState,
+                          aadhar: formattedValue
+                        }));
+                      }}
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
+                      placeholder="XXXX XXXX XXXX"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="date" className="block text-sm font-semibold text-gray-700">
                       Preferred Start Date
                     </label>
                     <input
@@ -188,12 +224,12 @@ const Volunteer = () => {
                       required
                       value={formData.date}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="time" className="block text-sm font-medium text-gray-700">
+                  <div className="space-y-2">
+                    <label htmlFor="time" className="block text-sm font-semibold text-gray-700">
                       Preferred Time
                     </label>
                     <select
@@ -202,7 +238,7 @@ const Volunteer = () => {
                       required
                       value={formData.time}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
                     >
                       <option value="">Select a time</option>
                       <option value="morning">Morning (9AM - 12PM)</option>
@@ -211,8 +247,8 @@ const Volunteer = () => {
                     </select>
                   </div>
 
-                  <div>
-                    <label htmlFor="experience" className="block text-sm font-medium text-gray-700">
+                  <div className="space-y-2">
+                    <label htmlFor="experience" className="block text-sm font-semibold text-gray-700">
                       Previous Experience
                     </label>
                     <input
@@ -221,13 +257,14 @@ const Volunteer = () => {
                       name="experience"
                       value={formData.experience}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                      className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
+                      placeholder="Any previous volunteering experience"
                     />
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="interests" className="block text-sm font-medium text-gray-700">
+                <div className="space-y-2">
+                  <label htmlFor="interests" className="block text-sm font-semibold text-gray-700">
                     Areas of Interest
                   </label>
                   <input
@@ -238,12 +275,12 @@ const Volunteer = () => {
                     value={formData.interests}
                     onChange={handleChange}
                     placeholder="e.g., Activities, Reading, Music, Arts & Crafts"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <div className="space-y-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
                     Why do you want to volunteer?
                   </label>
                   <textarea
@@ -253,16 +290,19 @@ const Volunteer = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500"
+                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 transition-colors duration-200 px-4 py-3 placeholder-gray-400 text-gray-900"
+                    placeholder="Tell us about your motivation to volunteer..."
                   ></textarea>
                 </div>
 
-                <div>
+                <div className="pt-4">
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white ${
-                      isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500'
+                    className={`inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white transition-all duration-200 ${
+                      isSubmitting 
+                        ? 'bg-gray-400 cursor-not-allowed' 
+                        : 'bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 transform hover:scale-105'
                     }`}
                   >
                     {isSubmitting ? 'Submitting...' : 'Submit Application'}
