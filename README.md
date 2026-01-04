@@ -1,5 +1,42 @@
 # Rupvan Foundation
 
+A modern, responsive website for Rupvan Foundation - A senior care and nursing home dedicated to providing compassionate care for the elderly.
+
+## Features
+
+- **Multi-page Navigation**: Home, About, Events, Volunteer, Donate, and Contact pages
+- **Multi-language Support**: Available in English, Hindi, and Marathi
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Events Gallery**: Static gallery showcasing various events and activities
+- **Donation Information**: Bank account details and contact information for contributions
+- **Contact Form**: Integrated form submission for inquiries
+- **Interactive Map**: Embedded Google Maps showing the foundation's location
+- **Founder Profiles**: Information about the leadership team
+
+## Technologies Used
+
+- **React** - Frontend framework
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **React Router** - Client-side routing
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Icon library
+- **Context API** - State management for language selection
+
+## Contact Details
+
+- **Address**: LANDMARK, St. Joseph's High School, RUPVAN FOUNDATION, RUPVAN GOLDEN AGE HOMES AND NURSING A-17, SECTOR -6, NEW PANVEL EAST, Panvel, Maharashtra 410206
+- **Phone**: 093267 90060
+- **Email**: info@rupvanfoundation.org
+
+## Bank Details
+
+- **Account Name**: Rupvan Foundation
+- **Account Number**: 50200062927731
+- **Bank**: HDFC Bank
+- **IFSC Code**: HDFC0000256
+- **Branch**: New Panvel (Branch Code: 0256)
+
 ## Netlify Deployment Instructions
 
 ### Deployment Settings

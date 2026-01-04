@@ -152,26 +152,26 @@ const About = () => {
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
                 alt="Director"
               />
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Sarah Johnson</h3>
-              <p className="text-rose-600 font-medium">Executive Director</p>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Rupali Gajakosh</h3>
+              <p className="text-rose-600 font-medium">Director & Founder</p>
             </div>
             <div className="text-center">
               <img
                 className="mx-auto h-40 w-40 rounded-full object-cover border-4 border-rose-100"
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-                alt="Medical Director"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                alt="Co-Founder"
               />
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Michael Chen</h3>
-              <p className="text-rose-600 font-medium">Medical Director</p>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Mr. Mambo</h3>
+              <p className="text-rose-600 font-medium">Co-Founder</p>
             </div>
             <div className="text-center">
               <img
                 className="mx-auto h-40 w-40 rounded-full object-cover border-4 border-rose-100"
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-                alt="Activities Director"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+                alt="Co-Founder"
               />
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Emily Rodriguez</h3>
-              <p className="text-rose-600 font-medium">Activities Director</p>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Mr. Amit</h3>
+              <p className="text-rose-600 font-medium">Co-Founder</p>
             </div>
           </div>
         </div>

@@ -99,10 +99,10 @@ const Donate = () => {
                   </div>
                   <div className="space-y-2 text-gray-600">
                     <p><span className="font-medium">{t('donate.bank.name')}</span> Rupvan Foundation</p>
-                    <p><span className="font-medium">{t('donate.bank.number')}</span> 1234567890</p>
-                    <p><span className="font-medium">{t('donate.bank.bankname')}</span> State Bank of India</p>
-                    <p><span className="font-medium">{t('donate.bank.ifsc')}</span> SBIN0001234</p>
-                    <p><span className="font-medium">{t('donate.bank.branch')}</span> Main Branch</p>
+                    <p><span className="font-medium">{t('donate.bank.number')}</span> 50200062927731</p>
+                    <p><span className="font-medium">{t('donate.bank.bankname')}</span> HDFC Bank</p>
+                    <p><span className="font-medium">{t('donate.bank.ifsc')}</span> HDFC0000256</p>
+                    <p><span className="font-medium">{t('donate.bank.branch')}</span> New Panvel (Branch Code: 0256)</p>
                   </div>
                 </div>
 
@@ -112,7 +112,7 @@ const Donate = () => {
                     <h3 className="text-lg font-medium text-gray-900">{t('donate.contact.title')}</h3>
                   </div>
                   <div className="space-y-2 text-gray-600">
-                    <p><span className="font-medium">{t('donate.contact.phone')}</span> +91 98765 43210</p>
+                    <p><span className="font-medium">{t('donate.contact.phone')}</span> 093267 90060</p>
                     <p className="flex items-center">
                       <Mail className="h-4 w-4 text-gray-500 mr-1" />
                       <span className="font-medium">{t('donate.contact.email')}</span> donations@rupvanfoundation.org

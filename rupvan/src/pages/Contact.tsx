@@ -97,8 +97,10 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Location</h3>
                     <p className="mt-1 text-gray-600">
-                      123 Care Lane<br />
-                      Serenity Valley, CA 91234
+                      LANDMARK, St. Joseph's High School,<br />
+                      RUPVAN FOUNDATION, RUPVAN GOLDEN AGE HOMES AND NURSING A-17,<br />
+                      SECTOR -6, NEW PANVEL EAST, NEW PANVEL,<br />
+                      Panvel, Maharashtra 410206
                     </p>
                   </div>
                 </div>
@@ -108,8 +110,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Phone</h3>
                     <p className="mt-1 text-gray-600">
-                      Main: (555) 123-4567<br />
-                      Emergency: (555) 987-6543
+                      Main: 093267 90060
                     </p>
                   </div>
                 </div>
@@ -119,8 +120,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Email</h3>
                     <p className="mt-1 text-gray-600">
-                      info@goldenyearshaven.com<br />
-                      admissions@goldenyearshaven.com
+                      info@rupvanfoundation.org
                     </p>
                   </div>
                 </div>

@@ -71,11 +71,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-rose-500 mr-2 mt-0.5" />
-                <span className="text-gray-300">123 Care Lane, Mumbai, Maharashtra 400001</span>
+                <span className="text-gray-300">LANDMARK, St. Joseph's High School, RUPVAN FOUNDATION, RUPVAN GOLDEN AGE HOMES AND NURSING A-17, SECTOR -6, NEW PANVEL EAST, Panvel, Maharashtra 410206</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-rose-500 mr-2" />
-                <span className="text-gray-300">+91 98765 43210</span>
+                <span className="text-gray-300">093267 90060</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-rose-500 mr-2" />
